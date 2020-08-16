@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practical-7</title>
+    <style>
+         *{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+        #nbar{
+            list-style-type: none;
+            background-color: grey;
+            margin: 10px;
+            padding: 0;
+            overflow: hidden;
+        }
+        ul#nbar li{
+            float: left;
+        }
+        ul#nbar li a{
+            display: block;
+            text-decoration: none;
+            font-weight: bold;
+            color: black;
+            padding: 16px 24px;
+            margin: 0px 64px;
+            background-color: grey;
+        }
+        ul#nbar li a:hover{
+            background-color: orange;
+            color: white;
+            
+        }
+        #container
+        {
+            border: 5px solid lightgray;
+            margin: 10px;
+            
+        }
+       
+        
+        #banner
+        {
+            /* border: 2px solid lightseagreen; */
+            height: 600px;
+            /* margin-top: 10px; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: lightseagreen;
+            /* margin-bottom: 10px; */
+            color: white;
+           
+        }
+        .banner img{
+            margin-top: 15px;
+            height: 600px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+
+        }
+        .top-left{
+            top: 150px;
+            left: 15px;
+            position: absolute;
+            font-size: 50px;
+            background-color: honeydew;
+            color: white;
+            padding: 15px;
+            width: 15px;
+        }
+        #section-1
+        {
+            /* border: 2px solid lightsalmon; */
+            height: 200px;
+            /* margin-bottom: 10px; */
+        }
+        #lc
+        {
+            /* border: 1px solid lightgreen; */
+            width: 48%;
+            height: 200px;
+            float: left;
+        }
+        #rc
+        {
+            /* border: 1px solid lightgreen; */
+            width: 48%;
+            height: 200px;
+            float: right;
+        }
+        #llc
+        {
+            /* border: 1px solid lightgreen; */
+            width: 39%;
+            float: left;
+            background-color: goldenrod;
+            height: 200px;
+            margin-right: 10%;
+            margin-left: 10%;
+            border-radius: 50%;
+        }
+        .llc img{
+            border-radius: 50%;
+            height: 200px;
+            width: 39%;
+        }
+        #lrc
+        {
+            /* border: 1px solid lightgreen; */
+            width: 39%;
+            float: left;
+            background-color:goldenrod;
+            height: 200px;
+            border-radius: 50%;
+        }
+        #rrc
+        {
+            /* border: 1px solid lightgreen; */
+            width: 39%;
+            float: left;
+            background-color:goldenrod;
+            height: 200px;
+            margin-right: 10%;
+            border-radius: 50%;
+        }
+        #rlc
+        {
+            /* border: 1px solid lightgreen; */
+            width: 39%;
+            float: left;
+            background-color:goldenrod;
+            height: 200px;
+            margin-right: 10%;
+            border-radius: 50%;
+        }
+        #section-2
+        {
+            /* border: 2px solid lightskyblue; */
+            height: 350px ;
+            /* margin-bottom: 10px; */
+            
+        }
+        #left
+        {
+            /* border: 1px solid lightslategray; */
+            width: 49%;
+            background-color: gray;
+            float: left;
+            height: 350px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            
+        }
+        #right
+        {
+            /* border: 1px solid lightpink; */
+            width: 49%;
+            float: right;
+
+        }
+        #artical-1
+        {
+            /* border: 1px solid blue; */
+            background-color: rgb(255, 123, 0);
+            color: white;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+        #artical-2
+        {
+            /* border: 1px solid blue; */
+            background-color:rgb(255, 123, 0);
+            color: white;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+        #artical-3
+        {
+            /* border: 1px solid blue; */
+            background-color: rgb(255, 123, 0);
+            color: white;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #section-3
+        {
+            /* border: 2px solid lightblue; */
+            height: 400px;
+            border-radius: 10px;
+            /* margin-bottom: 10px; */
+        }
+        #ls
+        {
+            /* border: 1px solid lightpink; */
+            
+            float: left;
+            width: 48%;
+            height: 400px;
+            border-radius: 10px;
+
+
+        }
+        #rs
+        {
+            /* border: 1px solid lightpink; */
+            
+            float: right;
+            width: 48%;
+            height: 400px;
+            border-radius: 10px;
+        }
+        #pl
+        {
+            /* border: 1px solid lightgreen; */
+            width: 39%;
+            float: left;
+            background-color: red;
+            height: 400px;
+            border-radius: 10px;
+            margin-right: 10%;
+            margin-left: 10%;
+            
+        }
+        #pr
+        {
+            /* border: 1px solid lightgreen; */
+            width: 39%;
+            float: left;
+            background-color: red;
+            height: 400px;
+            border-radius: 10px;
+            
+        }
+        #ppl
+        {
+            /* border: 1px solid lightgreen; */
+            width: 39%;
+            float: left;
+            background-color: red;
+            height: 400px;
+            margin-right: 10%;
+            border-radius: 10px;
+            
+        }
+        #ppr
+        {
+            /* border: 1px solid lightgreen; */
+            width: 39%;
+            float: left;
+            background-color: red;
+            height: 400px;
+            margin-right: 10%;
+            border-radius: 10px;
+            
+        }
+        #footer
+        {
+            
+            /* border: 2px solid lightslategray; */
+            margin: 0px auto;
+            color: white;
+            font-size: 40px;
+            background-color: darksalmon;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+         
+        }
+        h1
+        {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <ul id="nbar">
+        <li><a href="">HOME</a></li>
+        <li><a href="">ABOUTUS</a></li>
+        <li><a href="">TEAMMEMBER</a></li>
+        <li><a href="">TECHNOLOGIES</a></li>
+        <li><a href="">CONTACTS</a></li>
+    </ul>
+    <div id="container">
+        <div id="banner">
+            <img src="img/imagetag.png" width="100%" height="600px"
+              >
+            <div id="top-left">Practical-8</div>
+        </div>
+        <h1>Team member</h1>
+        <div id="section-1">
+            <div id="lc">
+                <div id="llc">
+                    <img src="https://www.123rf.com/photo_102851062_stock-vector-young-woman-riding-a-bike-and-waving-her-hand-active-lifestyle-concept-vector-illustrations-on-a-whi.html?vti=myh0iwt0hoghzif6md-1-5" alt="">
+                </div>
+                <div id="lrc"></div>
+            </div>
+            <div id="rc">
+                <div id="rrc"></div>
+                <div id="rlc"></div>
+            </div>
+        </div>
+        <h1>Aboutus</h1>
+        <div id="section-2">
+            <div id="left">main content</div>
+            <div id="right">
+                <div id="artical-1">artical-1</div>
+                <div id="artical-2">artical-2</div>
+                <div id="artical-3">artical-3</div>
+            </div>
+        </div>
+        <h1>Tecnologies</h1>
+        <div id="section-3">
+            <div id="ls">
+                <div id="pl"></div>
+                <div id="pr"></div>
+            </div>
+            <div id="rs">
+                <div id="ppl"></div>
+                <div id="ppr"></div>
+            </div>
+        </div>
+        <h1>Contacts</h1>
+        <div id="footer">footer</div>
+        
+    </div>
+</body>
+</html>
